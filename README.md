@@ -49,6 +49,7 @@ Here is the algorithm I used:
 
 7. Repeat
 
+A crucial benefit of this recursive solution, is the ease in representing coverage. We no longer need to know the placement of each individual rectangle, and the pixels it covers. Representation is reduced to only three rectangles. The outer-most boundary, the area that has already been optimally filled in, and the rectangular left over space (the dotted rectangle above). Thus, each new rectangle only needs to be checked against, at most, two rectangular areas (a great improvement over checking every single individual word).
 
 Another important feature I added was mapping the word frequencies onto a logarithmic distribution. Initially, words that occurred five times, would be five font sizes larger than a word that occurred once. This made the word cloud very confusing to read, because very frequent words looked more or less the same as less frequent ones. By applying a logarithmic function, the most frequent words would be significantly larger than the rest of the words. This greatly increased the readability of the word cloud.
 
