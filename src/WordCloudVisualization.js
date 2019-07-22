@@ -76,6 +76,7 @@ class WordCloudVisualization extends Component {
 		let ctx = this.state.ctx;
 		for (let i=0; i<this.state.remainingWords.length; i++) {
 			let key = this.state.remainingWords[i];
+			ctx.globalAlpha = this.state.wordFreq[key] / 50
 			ctx.font = this.state.wordFreq[key] + "px NutanixSoft";
 
 			let flipped = Math.random() < .5;
@@ -120,6 +121,7 @@ class WordCloudVisualization extends Component {
 		const ctx = this.state.ctx;
 		for (var i=0; i<this.state.remainingWords.length; i++) {
 			const key = this.state.remainingWords[i]
+			ctx.globalAlpha = this.state.wordFreq[key] / 50
 			ctx.font = this.state.wordFreq[key] + "px NutanixSoft-Thin";
 			
 			var flipped = Math.random() < .5;
