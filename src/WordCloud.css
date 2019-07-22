@@ -1,0 +1,46 @@
+@font-face {
+    font-family: NutanixSoft;
+    src: url("fonts/NutanixSoft-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: NutanixSoft-Thin;
+    src: url("fonts/NutanixSoft-Thin.otf") format("opentype");
+}
+@font-face {
+    font-family: NutanixSoft-Bold;
+    src: url("fonts/NutanixSoft-Bold.otf") format("opentype");
+}
+
+.title-container {
+	width: 100%;
+	text-align: center;
+	height: 60px;
+}
+.title {
+	font-family: NutanixSoft;
+	font-size: 29px;
+	line-height: 2em;
+}
+
+.textarea-container {
+	width: 100vw;
+	height: 130px;
+	text-align: center;
+}
+
+textarea {
+	width: 90vw;
+	height: 100px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	border-width: .5px;
+	padding: 7px;
+	font-family: NutanixSoft;
+	font-size: 13px;
+}
+
+textarea:focus {
+	border-color: #23a5f7;
+	outline: none;
+}

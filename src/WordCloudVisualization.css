@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: NutanixSoft;
+    src: url("fonts/NutanixSoft-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: NutanixSoft-Thin;
+    src: url("fonts/NutanixSoft-Thin.otf") format("opentype");
+}
