@@ -23,17 +23,23 @@ I realized I could even further simplify. There were only had two problems to so
 Here is the algorithm I used:
 
 1. Start with an empty canvas
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/1.jpg)
 
 2. Place a word in the center
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/2.jpg)
 
 3. Place a second word next to this word
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/3.jpg)
 
 4. Fill up any leftover space with words (recursively)
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/4.jpg)
 
 5. Place another word next to this filled rectangle (recursively)
-
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/5_1.jpg)
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/5_2.jpg)
 
 6. Fill up any leftover space (recursively)
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/6.jpg)
 
 7. Repeat
 
