@@ -6,10 +6,20 @@
 Live Demo: https://cloudbymegan.herokuapp.com/
 
 ### Abstract
-Word clouds present a unique challenge for both design and engineering. How does one minimize space between words? How does one create a modern look (very minimal and linear; no obliques or retro fonts). Most importantly, how does one dynamically generate clouds in real- time? 
+Word clouds present a unique challenge for both design and engineering. How does one minimize space between words? How does one create a modern look (minimal and linear; no obliques or retro fonts)? Most importantly, how does one dynamically generate clouds in real-time? 
+ 
 
 
-Ultimately I solved the word cloud challenge by reducing it to the NP-Hard bin-packing problem, and further reducing that problem. In this repository, I prioritized coming up with an elegant recursive solution in javascript, making this an exercise in functional programming. At the same time, I emphasized aesthetic principles, making this an exercise in creativity. Overall, this solution took me around 30 hours, spread out over 2 weekends and involves several hundred lines of code that I wrote from scratch.
+Ultimately I solved the word cloud challenge by relating it to the NP-Hard bin-packing problem. I then reduced the bin-packing problem to yield a solution that could dynamically generate word clouds. In this repository, I prioritized coming up with an elegant recursive solution in javascript, making this an exercise in functional programming. At the same time, I emphasized aesthetic principles, making this an exercise in creativity. Overall, this solution took me around 30 hours, spread out over 2 weekends and involves several hundred lines of code that I wrote from scratch.
+
+### Specifications and Requirements
+- A tag cloud (or word cloud) is a unique way to visually display a body of text by making certain
+words within the text bigger usually to represent frequency or significance of the word. (definition given by Chase Cho from Nutanix). 
+- No outside frameworks or libraries could be used except React JS
+- Live generation was not required. Rather, the easier solution would be to type a list of words, click a button, and wait for the word cloud to load all at once. However I wanted to make this word cloud better and easier to use for the viewer. Since React already does live client rendering, why not just make the word cloud generate as one types? 
+
+### Style
+For the style, I referred to the Nutanix Style Guide that I found online. This is the reason why the word cloud was built to be modern and light, just like the principles in the Style Guide.
 
 ### Word Clouds are a Bin Packing Problem
 For my initial attempt, I noticed the words could be represented as rectangles with different dimensions. If I were able to minimize the white space between words, I would be creating a word cloud with the smallest area. Thus, the problem I had to solve was how to optimally fit rectangles into a minimal boundary area.
