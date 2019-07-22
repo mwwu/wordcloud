@@ -6,7 +6,7 @@
 Live Demo: https://cloudbymegan.herokuapp.com/
 
 ### Introduction
-For the most part, word clouds are not the most aesthetically pleasing things. In addition to creating a word cloud that fit the specs, I wanted to tackle some aesthetic issues such as minimizing space between words and creating a modern look (minimal and linear; no obliques or retro fonts). In addition, I wanted to utilize React's build in client-side renderingto generate clouds in real time. 
+For the most part, word clouds are not the most aesthetically pleasing things. In addition to creating a word cloud that fit the specs, I wanted to tackle some aesthetic issues such as minimizing space between words and creating a modern look (very minimal and linear; no obliques or retro fonts). In addition, I wanted to utilize React's build in client-side rendering to generate clouds in real time. 
 
 ### First Attempt: Bin Packing Problem
 For my initial attempt, I noticed the words could be represented as rectangles with different dimensions. If I were able to minimize the white space between words, I would be creating a word cloud with the smallest area. Thus, the problem I had to solve was how to optimally fit rectangles into the minimal boundary area.
@@ -45,7 +45,6 @@ Here is the algorithm I used:
 ![](https://github.com/mwwu/wordcloud/blob/master/imgs/6.jpg)
 
 7. Repeat
-
 
 
 Another important feature I added was mapping the word frequencies onto a logarithmic distribution. Initially, words that occurred five times, would be five font sizes larger than a word that occurred once. This made the word cloud very confusing to read, because very frequent words looked more or less the same as less frequent ones. By applying a logarithmic function, the most frequent words would be significantly larger than the rest of the words. This greatly increased the readability of the word cloud.
