@@ -38,7 +38,7 @@ class WordCloudVisualization extends Component {
 				max = Math.max(max, wordFreq[word]);
 			
 			let wordFreqCopy = {};
-			let multiplier = (this.props.canvasHeight * this.props.canvasWidth)/3500;
+			let multiplier = Math.max(90, (this.props.canvasHeight * this.props.canvasWidth)/3500);
 			console.log(multiplier)
 			for (let word in wordFreq) 
 				wordFreqCopy[word] = Math.min(.3, (Math.log((wordFreq[word]/max)+1)))*multiplier;
