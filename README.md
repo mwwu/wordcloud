@@ -12,7 +12,7 @@ Word clouds present a unique challenge for both design and engineering. How does
 Ultimately I solved the word cloud challenge by reducing it to the NP-Hard bin-packing problem, and further reducing that problem. In this repository, I prioritized coming up with an elegant recursive solution in javascript, making this an exercise in functional programming. At the same time, I emphasized aesthetic principles, making this an exercise in creativity. Overall, this solution took me around 30 hours, spread out over 2 weekends and involves several hundred lines of code that I wrote from scratch.
 
 ### Word Clouds are a Bin Packing Problem
-For my initial attempt, I noticed the words could be represented as rectangles with different dimensions. If I were able to minimize the white space between words, I would be creating a word cloud with the smallest area. Thus, the problem I had to solve was how to optimally fit rectangles into the minimal boundary area.
+For my initial attempt, I noticed the words could be represented as rectangles with different dimensions. If I were able to minimize the white space between words, I would be creating a word cloud with the smallest area. Thus, the problem I had to solve was how to optimally fit rectangles into a minimal boundary area.
 
 In order to do this, I would have to, first, maintain some sort of representation of the already covered areas. This way, I could test whether a new word would overlap in any position. Then, for every word I placed, the next word could be placed any pixel within a reasonable distance from the first one. I would then be required to iterate through every permutation of placement for all n words. This would require a huge amount of computation.
 
@@ -61,7 +61,7 @@ In terms of edge cases, empty inputs are accepted and large inputs are limited t
 ### Future / Next Steps
 There are several next steps that would be interesting to explore:
 #### 1. Irregular Vacancies
-There are occasionally large empty spaces that show up. I did not work on this further, because of how quickly a new cloud can be generated. However, I would be interesting to work on eliminating this completely.
+There are occasionally large empty spaces that show up. I did not work on this further, because of how quickly and efficiently a new cloud can be generated. It would be interesting to work on eliminating this completely.
 #### 2. Strict Logarithmic Distribution
 Instead of scaling the words to a logarithmic function, words would be distributed evenly along the log curve. This would likely create a more regular and beautiful distribution.
 #### 3. Caching
