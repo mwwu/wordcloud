@@ -13,7 +13,7 @@ For my initial attempt, I noticed the words could be represented as rectangles w
 
 In order to do this, I would have to, first, maintain some sort of representation of the already covered areas. This way, I could test whether a new word would overlap in any position. Then, for every word I placed, the next word could be placed any pixel within a reasonable distance from the first one. I would then be required to iterate through every permutation of placement for all n words. This would require a huge amount of computation.
 
-I struggled with this optimization problem, until upon further research, I realized that this was a well studied problem called the "Bin Packing Problem". It turns out this is NP-hard, which meant that I was definitely not going to find a computationally usable solution for this project. 
+I struggled with this optimization problem, until I realized that this was actually an NP-hard problem. It is actually similar to a problem called the "Bin Packing Problem". So, I was definitely not going to find a computationally usable solution in time for this project. 
 
 ### Second Attempt: Not-so-hard Bin Packing Problem
 The problem I now faced was: what kind of simplifications can I introduce to the problem to remove this from the NP-hard class? If I were able to relax some rules, perhaps I could still generate aesthetically pleasing clouds. These are just some rules I tried: (1) Sort the words and divide into ten distinct font sizes; (2) Allow the font size to change within a range; (3) Add words randomly until it fit. 
