@@ -68,3 +68,5 @@ It would be interesting to pull words from an external source. Now that the word
 Currently, this app is responsive and will work on a phone. However, it is not as smooth as it could be.
 #### 6. Fonts + Colors
 For further development, I would want to allow users to choose fonts (the default one now is the Nutanix font pack) or colors.
+#### 6. Text parsing
+The text parsing is still very basic. It just blindly removes everything that is not a digit or letter. This will cause problems for contractions, words with apostraphes or hyphens. For production, this would be an important feature to work on.
