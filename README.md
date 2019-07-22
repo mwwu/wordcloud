@@ -1,6 +1,7 @@
 
 
 ## Word Cloud
+![](https://github.com/mwwu/wordcloud/blob/master/imgs/cloud.png)
 
 Live Demo: https://cloudbymegan.herokuapp.com/
 
