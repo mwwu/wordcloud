@@ -11,6 +11,8 @@ For the most part, word clouds are not the most aesthetically pleasing things. I
 ### First Attempt: Bin Packing Problem
 For my initial attempt, I noticed the words could be represented as rectangles with different dimensions. If I were able to minimize the white space between words, I would be creating a word cloud with the smallest area. Thus, the problem I had to solve was how to optimally fit rectangles into the minimal boundary area.
 
+In order to do this, I would have to, first, maintain some sort of representation of the already covered areas. This way, I could test whether a new word would overlap in any position. Then, for every word I placed, the next word could be placed any pixel within a reasonable distance from the first one. I would then be required to iterate through every permutation of placement for all n words. This would require a huge amount of computation.
+
 I struggled with this optimization problem, until upon further research, I realized that this was a well studied problem called the "Bin Packing Problem". It turns out this is NP-hard, which meant that I was definitely not going to find a computationally usable solution for this project. 
 
 ### Second Attempt: Not-so-hard Bin Packing Problem
