@@ -14,7 +14,7 @@ Ultimately I solved the word cloud challenge by relating it to the NP-Hard bin-p
 
 ### Specifications and Requirements
 - A tag cloud (or word cloud) is a unique way to visually display a body of text by making certain
-words within the text bigger usually to represent frequency or significance of the word. (definition given by Chase Cho from Nutanix). 
+words within the text bigger usually to represent frequency or significance of the word.
 - No outside frameworks or libraries could be used except React JS
 - Live generation was not required. Rather, the easier solution would be to type a list of words, click a button, and wait for the word cloud to load all at once. However I wanted to make this word cloud better and easier to use for the viewer. Since React already does live client rendering, why not just make the word cloud generate as one types? 
 
